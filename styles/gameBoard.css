@@ -1,0 +1,35 @@
+.gameBoard
+{
+    border: 3px solid red;
+    float:left;
+}
+
+.gameBoard::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.vRow
+{
+    float: left;
+    clear: left;
+}
+
+.cell
+{
+    float: left;
+    width: 45px;
+    height: 45px;
+    background-color: darkgray;
+}
+
+.vRow:nth-child(2n) .cell:nth-child(2n)
+{
+    background-color: lightgray;
+}
+
+.vRow:nth-child(2n-1) .cell:nth-child(2n-1)
+{
+    background-color: lightgray;
+}
